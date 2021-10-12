@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+html,
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  min-width: 675px;
+}
+body.display {
+  transition: fadeIn 1s forwards;
+  display: block !important;
+}
+@keyframes fadeIn {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
+:root {
+  --DarkBlue: hsl(209, 23%, 22%);
+  --VeryDarkBlue: hsl(207, 26%, 17%);
+  --VeryDarkBlueShadow: hsl(200, 15%, 8%);
+  --DarkGray: hsl(0, 0%, 52%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.dark {
+  color: var(--White)
+}
+
+.dark nav {
+  background: var(--DarkBlue);
+  border-color: var(--VeryDarkBlueShadow);
+}
+.dark main {
+  background: var(--VeryDarkBlue)
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  background: none;
+  border: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
